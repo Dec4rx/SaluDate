@@ -10,4 +10,27 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="medical_test">Medical test</string>
+    <string name="notes">Notes</string>
+    <string name="print_qr">Print QR</string>
+    <string name="print_full_patient_information">Print full patient information</string>
+    <string name="vitalsigns">VitalSigns</string>
+    <string name="medicine">Medicine</string>
+    <string name="user">Mark Romos</string>
+    <string name="information">Information</string>
+    <string name="patient_age">21\nAge</string>
+    <string name="health_condition">4\nHealth\nCondition</string>
+    <string name="Monday">Mo</string>
+    <string name="Preassure">120/80\nPressure</string>
+    <string name="Tuesday">Tu</string>
+    <string name="Thuesday">Th</string>
+    <string name="Wendsday">We</string>
+    <string name="Sunday">Su</string>
+    <string name="Friday">Fr</string>
+    <string name="Saturnday">Sa</string>
+    <string name="Temperature">36°\nTemperature</string>
+    <string name="Glucose">140\nGlucose</string>
+    <string name="Bed">3\nBed</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">profile</string>
 </resources>
