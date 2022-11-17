@@ -10,7 +10,7 @@ public class LanguageViewModel extends ViewModel {
 
     public LanguageViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is language fragment");
+        //mText.setValue("This is language fragment");
     }
 
     public LiveData<String> getText() {

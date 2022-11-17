@@ -10,7 +10,7 @@ public class PriSecViewModel extends ViewModel {
 
     public PriSecViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Privacy and Security fragment");
+        //mText.setValue("This is Privacy and Security fragment");
     }
 
     public LiveData<String> getText() {
