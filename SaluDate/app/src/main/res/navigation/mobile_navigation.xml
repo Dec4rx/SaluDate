@@ -3,23 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/welcomeFragment">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.saludate.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.saludate.ui.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_login_Fragment"
+            app:destination="@id/login_Fragment" />
+    </fragment>
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.saludate.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/login_Fragment"
+        android:name="com.example.saludate.ui.Login.login_Fragment"
+        android:label="fragment_login_"
+        tools:layout="@layout/fragment_login_" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.saludate.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.saludate.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/forgotPassword"
+        android:name="com.example.saludate.ui.gallery.ForgotPassword.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/noConnection"
+        android:name="com.example.saludate.ui.gallery.NoConnection.NoConnection"
+        android:label="fragment_no_connection"
+        tools:layout="@layout/fragment_no_connection" />
+    <fragment
+        android:id="@+id/OTPVerification"
+        android:name="com.example.saludate.ui.gallery.OTPVerification.OTPVerification"
+        android:label="fragment_o_t_p_verification"
+        tools:layout="@layout/fragment_o_t_p_verification" />
+    <fragment
+        android:id="@+id/passwordChanged"
+        android:name="com.example.saludate.ui.gallery.PasswordChanged.PasswordChanged"
+        android:label="fragment_password_changed"
+        tools:layout="@layout/fragment_password_changed" />
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.saludate.ui.SignUp.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>
