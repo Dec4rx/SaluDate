@@ -10,4 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="temp_b_10">Takes the patient\'s temperature in <b>bed 10.</b></string>
+    <string name="medicine_bed19">It\'s time for the patient in <b>bed 19</b> to take his medicine.</string>
+    <string name="medicine_bed_8">It\'s time for the patient in <b>bed 8</b> to take his medicine.</string>
 </resources>
