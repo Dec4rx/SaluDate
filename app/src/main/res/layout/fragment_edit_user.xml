@@ -55,16 +55,35 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/editTxt_personNameh"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:background="@drawable/rounded_inputh"
-            android:ems="10"
-            android:hint="Mark Ramos"
-            android:inputType="textPersonName"
-            android:paddingStart="8dp"
-            android:textColor="@color/black" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTxt_personNameh"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_inputh"
+                android:ems="10"
+                android:hint="Mark Ramos"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_personah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_personah"
+                app:layout_constraintBottom_toBottomOf="@+id/editTxt_personNameh"
+                app:layout_constraintEnd_toEndOf="@+id/editTxt_personNameh"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="@+id/editTxt_personNameh"
+                app:layout_constraintTop_toTopOf="@+id/editTxt_personNameh" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/txt_phoneh"
@@ -77,15 +96,35 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/editTxt_Phoneh"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:background="@drawable/rounded_inputh"
-            android:ems="10"
-            android:hint="202-555-0180"
-            android:inputType="phone"
-            android:paddingStart="8dp" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTxt_Phoneh"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_inputh"
+                android:ems="10"
+                android:hint="202-555-0180"
+                android:inputType="phone"
+                android:paddingStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_phoneh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_celh"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.518" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/txt_birthdayh"
@@ -98,15 +137,35 @@
             android:textColor="@color/black"
             android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/editTxt_Dateh"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:background="@drawable/rounded_inputh"
-            android:ems="10"
-            android:hint="2008-01-31"
-            android:inputType="date"
-            android:paddingStart="8dp" />
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTxt_Dateh"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/rounded_inputh"
+                android:ems="10"
+                android:hint="2008-01-31"
+                android:inputType="date"
+                android:paddingStart="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_calendarsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_calendarsh"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.953"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.518" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
 
