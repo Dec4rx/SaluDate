@@ -47,4 +47,5 @@
     <string name="dosaje_20mg_e"><b>Dosaje:</b> 20mg</string>
     <string name="date_2022_10_18_e"><b>Date:</b> 2022/10/18</string>
     <string name="add_test_e">Add Test</string>
+    <string name="vital_signs_e">Vital Signs</string>
 </resources>
