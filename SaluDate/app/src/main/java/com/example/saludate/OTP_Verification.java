@@ -14,7 +14,7 @@ public class OTP_Verification extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_verification);
-        OTPbtn= findViewById(R.id.verify_button);
+        OTPbtn= findViewById(R.id.ResetPassBtnM);
         OTPbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
