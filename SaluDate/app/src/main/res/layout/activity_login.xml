@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Login.login_Fragment">
+    android:onClick="LogtoPass"
+    tools:context=".Login">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -20,7 +21,7 @@
         android:id="@+id/email_input"
         android:layout_width="333dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
@@ -43,11 +44,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="409dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="56dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_input">
+        app:layout_constraintTop_toBottomOf="@+id/login_button_access">
 
         <TextView
             android:id="@+id/login_Text"
@@ -66,7 +67,7 @@
             android:layout_width="76dp"
             android:layout_height="76dp"
             android:layout_marginStart="48dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:src="@drawable/face_placeholder"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/login_Text" />
@@ -76,7 +77,7 @@
             android:layout_width="76dp"
             android:layout_height="76dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:src="@drawable/email_placeholder"
             app:layout_constraintStart_toEndOf="@+id/imageButton3"
             app:layout_constraintTop_toBottomOf="@+id/login_Text" />
@@ -86,7 +87,7 @@
             android:layout_width="76dp"
             android:layout_height="76dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="48dp"
             android:src="@drawable/apple_placeholder"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -101,7 +102,7 @@
         android:id="@+id/signup_login"
         android:layout_width="141dp"
         android:layout_height="19dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="Dont have an account?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +116,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
+        android:onClick="LogtoSign"
         android:text="Sign Up"
         android:textColor="#00BCD4"
         app:layout_constraintStart_toEndOf="@+id/signup_login"
@@ -127,6 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/login_Text"
+        android:textColor="#00BCD4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_input" />
@@ -153,5 +156,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/forgottext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="21dp"
+        android:text="Forgot password?"
+        android:textColor="#00BCD4"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintStart_toEndOf="@+id/login_button_access" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
