@@ -24,7 +24,7 @@ public class LanguageFragment extends Fragment {
         binding = FragmentLanguageBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textLanguage;
+        final TextView textView = binding.textLanguageh;
         languageViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

@@ -24,7 +24,7 @@ public class PriSecFragment extends Fragment {
         binding = FragmentPriSecBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textPriSec;
+        final TextView textView = binding.textPriSech;
         prisecViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }

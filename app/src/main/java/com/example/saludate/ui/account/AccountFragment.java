@@ -1,8 +1,7 @@
-package com.example.saludate.ui.editUserProfile;
+package com.example.saludate.ui.account;
 
 import androidx.lifecycle.ViewModelProvider;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -14,28 +13,25 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.saludate.Exit;
-import com.example.saludate.MainActivity;
 import com.example.saludate.R;
-import com.example.saludate.databinding.FragmentEditUserBinding;
+import com.example.saludate.databinding.FragmentAccountBinding;
 import com.example.saludate.databinding.FragmentGalleryBinding;
-import com.example.saludate.ui.account.AccountFragment;
 import com.example.saludate.ui.gallery.GalleryViewModel;
 
-public class EditUserFragment extends Fragment {
+public class AccountFragment extends Fragment {
 
-    private FragmentEditUserBinding binding;
+    private FragmentAccountBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        EditUserViewModel editUserViewModel =
-                new ViewModelProvider(this).get(EditUserViewModel.class);
+        AccountViewModel accountViewModel =
+                new ViewModelProvider(this).get(AccountViewModel.class);
 
-        binding = FragmentEditUserBinding.inflate(inflater, container, false);
+        binding = FragmentAccountBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textEdith;
-        editUserViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textAccount;
+        accountViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

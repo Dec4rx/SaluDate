@@ -22,38 +22,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.046" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="391dp"
-        android:layout_height="312dp"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="121dp"
-        tools:src="@tools:sample/backgrounds/scenic" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Are you sure?"
-        android:textColor="@color/main_blue"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="465dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_menu_gallery"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="597dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_menu_bell"
-        tools:layout_editor_absoluteX="250dp"
-        tools:layout_editor_absoluteY="592dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

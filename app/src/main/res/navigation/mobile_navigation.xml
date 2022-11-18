@@ -32,4 +32,9 @@
         android:name="com.example.saludate.ui.prisec.PriSecFragment"
         android:label="@string/priSec"
         tools:layout="@layout/fragment_pri_sec" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.saludate.ui.account.AccountFragment"
+        android:label="@string/accounth"
+        tools:layout="@layout/fragment_account" />
 </navigation>
