@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SugarBlood">
+    tools:context=".BreathingFrecuency">
 
 
     <ImageButton
@@ -79,7 +79,7 @@
                 android:layout_marginTop="21dp"
                 android:layout_marginEnd="273dp"
                 android:fontFamily="@font/roboto"
-                android:text="@string/sugar_blood"
+                android:text="@string/breathing_frecuency"
                 android:textSize="28sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="200dp"
                 android:fontFamily="@font/roboto"
-                android:text="@string/_124_mg_dl"
+                android:text="@string/_12_rmp"
                 android:textColor="#000000"
                 android:textSize="48sp"
                 android:textStyle="bold"
@@ -111,7 +111,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView14"
-                app:srcCompat="@drawable/yellow_chart"
+                app:srcCompat="@drawable/blue2_chart"
                 android:contentDescription="@string/todo" />
 
             <View
@@ -259,4 +259,5 @@
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
