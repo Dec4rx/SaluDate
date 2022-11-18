@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ProyectosAndroidv2/SaluDate/app/src/main/res/layout/content_main.xml" value="0.1" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/activity_manual_register.xml" value="0.20588235294117646" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/activity_paciente_individual.xml" value="0.1" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/activity_paciente_info.xml" value="0.20416666666666666" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/activity_pacientes.xml" value="0.5" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/activity_register_type.xml" value="0.22413793103448276" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/app_bar_main.xml" value="0.22685185185185186" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/fragment_paciente.xml" value="0.15" />
+        <entry key="..\:/Proyectos_Android/SaluDate/SaluDate/app/src/main/res/layout/fragment_patients.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
