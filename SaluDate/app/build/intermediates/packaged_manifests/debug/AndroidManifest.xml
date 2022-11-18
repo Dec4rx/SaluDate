@@ -21,6 +21,42 @@
         android:testOnly="true"
         android:theme="@style/Theme.SaluDate" >
         <activity
+            android:name="com.example.saludate.AddTest_e"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.MedicalTest_e"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.Medicine_e"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.Register_e"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.HealtCondition"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.BloodPreasure"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.Oxygenation"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.BreathingFrecuency"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.Temperature"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.HeartRate"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.SugarBlood"
+            android:exported="false" />
+        <activity
+            android:name="com.example.saludate.VitalSigns"
+            android:exported="false" />
+        <activity
             android:name="com.example.saludate.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
@@ -31,6 +67,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
