@@ -4,19 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.Patients">
+    android:background="@color/white"
+    tools:context=".Pacientes">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_patientAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:contentDescription="@string/XD"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+            tools:src="@tools:sample/avatars" />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout5"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@color/gris_main"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +44,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:text="Patients"
+                android:text="@string/txt_patient_main"
                 android:textSize="34sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -42,109 +57,112 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="32dp"
                 android:layout_marginBottom="8dp"
+                android:contentDescription="@string/txt_patient_main"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/avatars" />
+                tools:ignore="ImageContrastCheck"
+                android:src="@drawable/nurse"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ScrollView
             android:id="@+id/scroll_patientsHolder"
-            android:layout_width="414dp"
-            android:layout_height="828dp"
+            android:layout_width="415dp"
+            android:layout_height="550dp"
             android:layout_marginTop="16dp"
             android:background="@color/gris_main"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout5"
             app:layout_constraintVertical_bias="0.0">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_patients"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="1500dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/patient_004"
-                    android:layout_width="match_parent"
+
+                    android:id="@+id/patient_001"
+                    android:layout_width="380dp"
                     android:layout_height="120dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="16dp"
                     android:background="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/patient_2">
+                    app:layout_constraintTop_toTopOf="parent">
+
 
                     <ImageView
-                        android:id="@+id/img_patient_4"
+                        android:id="@+id/img_patient_1"
                         android:layout_width="85dp"
                         android:layout_height="49dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:contentDescription="@string/name_001"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:src="@tools:sample/avatars" />
+                        tools:ignore="ImageContrastCheck"
+                        tools:src="@drawable/female_avatar" />
 
                     <TextView
-                        android:id="@+id/txt_age_patient"
+                        android:id="@+id/txt_age_patient_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:text="Age: 51"
+                        android:text="@string/age_001"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/img_patient_4" />
+                        app:layout_constraintTop_toBottomOf="@+id/img_patient_1" />
 
                     <TextView
-                        android:id="@+id/txt_patient_bed"
+                        android:id="@+id/txt_patient_bed_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:text="Bed: 19"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:text="@string/bed_001"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/txt_age_patient" />
+                        app:layout_constraintTop_toBottomOf="@+id/txt_age_patient_1" />
 
                     <TextView
-                        android:id="@+id/txt_patient"
+                        android:id="@+id/txt_patient_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="24dp"
-                        android:text="Miguel Diaz"
-                        app:layout_constraintStart_toEndOf="@+id/img_patient_4"
+                        android:text="@string/name_001"
+                        app:layout_constraintStart_toEndOf="@+id/img_patient_1"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
+                    <Button
+                        android:id="@+id/btn_patient_001"
                         android:layout_width="100dp"
-                        android:layout_height="0dp"
-                        android:layout_marginStart="140dp"
-                        android:background="@color/rojo_main"
+                        android:layout_height="132dp"
+                        android:backgroundTint="@color/rojo_main"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/txt_patient"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.5">
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                        tools:ignore="SpeakableTextPresentCheck" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/patient_2"
+                    android:id="@+id/patient_002"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="16dp"
                     android:background="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout9">
+                    app:layout_constraintTop_toBottomOf="@+id/patient_001">
 
                     <ImageView
                         android:id="@+id/img_patient_2"
@@ -152,9 +170,11 @@
                         android:layout_height="49dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:contentDescription="@string/name_002"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:src="@tools:sample/avatars" />
+                        tools:ignore="ImageContrastCheck"
+                        tools:src="@drawable/male_avatar" />
 
                     <TextView
                         android:id="@+id/txt_age_patient_2"
@@ -162,7 +182,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:text="Age: 51"
+                        android:text="@string/age_002"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/img_patient_2" />
 
@@ -173,7 +193,7 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:text="Bed: 19"
+                        android:text="@string/bed_002"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/txt_age_patient_2" />
@@ -184,7 +204,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="24dp"
-                        android:text="Miguel Diaz"
+                        android:text="@string/name_002"
                         app:layout_constraintStart_toEndOf="@+id/img_patient_2"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -201,56 +221,59 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout9"
+                    android:id="@+id/patient_003"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
                     android:background="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toBottomOf="@+id/patient_002">
 
                     <ImageView
-                        android:id="@+id/img_patient_1"
+                        android:id="@+id/img_patient_4"
                         android:layout_width="85dp"
                         android:layout_height="49dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:contentDescription="@string/name_003"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:src="@tools:sample/avatars" />
+                        tools:src="@drawable/male_avatar" />
 
                     <TextView
-                        android:id="@+id/txt_age_patient_1"
+                        android:id="@+id/txt_age_patient"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:text="Age: 51"
+                        android:text="@string/age_003"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/img_patient_1" />
+                        app:layout_constraintTop_toBottomOf="@+id/img_patient_4" />
 
                     <TextView
-                        android:id="@+id/txt_patient_bed_1"
+                        android:id="@+id/txt_patient_bed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:text="Bed: 19"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/bed_003"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/txt_age_patient_1" />
+                        app:layout_constraintTop_toBottomOf="@+id/txt_age_patient" />
 
                     <TextView
-                        android:id="@+id/txt_patient_1"
+                        android:id="@+id/txt_patient"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="24dp"
-                        android:text="Miguel Diaz"
-                        app:layout_constraintStart_toEndOf="@+id/img_patient_1"
+                        android:text="@string/name_003"
+                        app:layout_constraintStart_toEndOf="@+id/img_patient_4"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -259,33 +282,36 @@
                         android:background="@color/rojo_main"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5">
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout10"
+                    android:id="@+id/patient_004"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="16dp"
                     android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/patient_004">
+                    app:layout_constraintTop_toBottomOf="@+id/patient_003">
 
                     <ImageView
-                        android:id="@+id/imageView8"
+                        android:id="@+id/img_patient_004"
                         android:layout_width="85dp"
                         android:layout_height="49dp"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:contentDescription="@string/name_004"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:src="@tools:sample/avatars" />
+                        tools:src="@drawable/male_avatar" />
 
                     <TextView
                         android:id="@+id/txt_age_patient_4"
@@ -293,9 +319,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
-                        android:text="Age: 51"
+                        android:text="@string/age_004"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+                        app:layout_constraintTop_toBottomOf="@+id/img_patient_004" />
 
                     <TextView
                         android:id="@+id/txt_patient_bed_4"
@@ -304,10 +330,10 @@
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
-                        android:text="Bed: 19"
+                        android:text="@string/bed_004"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/txt_age_patient" />
+                        app:layout_constraintTop_toBottomOf="@+id/txt_age_patient_4" />
 
                     <TextView
                         android:id="@+id/txt_patient_4"
@@ -315,8 +341,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="24dp"
-                        android:text="Miguel Diaz"
-                        app:layout_constraintStart_toEndOf="@+id/imageView8"
+                        android:text="@string/name_004"
+                        app:layout_constraintStart_toEndOf="@+id/img_patient_004"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -325,11 +351,13 @@
                         android:background="@color/rojo_main"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
 
