@@ -36,4 +36,5 @@
     <string name="blood_preasure">Blood Preasure</string>
     <string name="_120_80_mmhg">120/80 mmHg</string>
     <string name="state_3">State: 3</string>
+    <string name="register_e">Register</string>
 </resources>
